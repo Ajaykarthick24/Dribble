@@ -27,240 +27,83 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
-<!DOCTYPE html>
+
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Design</title>
+  <title>Carzo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-
-
-    .navbar {
-      background-color: gold;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 40px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      
-    }
-
-    .navbar-brand {
-      color: red;
-      font-weight: bold;
-      font-size: 24px;
-    }
-
-    
-    .sub-links {
-      display: flex;
-      gap: 20px;
-      margin-top: 8px;
-    }
-
-    .sub-links a {
-      color: green;
-      text-decoration: none;
-      font-size: 15px;
-      transition: all 0.3s ease;
-    }
-
-    .sub-links a:hover {
-      color: silver;
-      text-decoration: underline;
-    }
-
-    
-    .controls {
-      text-align: center;
-      margin: 25px 0;
-    }
-
-    .controls a {
-      margin: 0 20px;
-      font-size: 18px;
-      color: black;
-      text-decoration: none;
-      position: relative;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-
-    .controls a::after {
-      content: " ▼";
-      font-size: 12px;
-      color: black;
-    }
-    .me-4{
-      text-align: right;
-
-    }
-    .controls a:hover {
-      color: #000;
-      border-bottom: 3px solid #ff4081;
-      padding-bottom: 5px;
-    }
-
-    
-    .card img {
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover img {
-      transform: scale(1.05);
-    }
-
-    .card {
-      border: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-title {
-      font-weight: 600;
-      font-size: 15px;
-      color: black;
-    }
-
-    
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: black;
-      margin-top: 30px;
-    }
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-  
-  <nav class="navbar">
-    <div>
-      <a class="navbar-brand" href="#">Carzo showroom</a>
-      <div class="sub-links">
-        <a href="#">Orders</a>
-        <a href="#">Booking</a>
-        <a href="#">Community</a>
-        <a href="#">Account</a>
-      </div>
-    </div>
-  </nav>
-  <div class="me-4">
-   <ul class="nav navbar-nav navbar-right">
+<nav class="navbar navbar-default bg-info text-black">
+    <div class="container-fluid">
+       
+     <h3 class="fst-italic">Carzo</h3>
+         <ul class="nav navbar-nav">
+        <li>Orders &nbsp;
+         Cart  &nbsp;
+          Offers  &nbsp;
+        Community</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
              <li>Sign up  &nbsp;
          Sign in
-             </li>
+         <input type="text" value="Search"></li>
         </ul>
         </div>
 </nav>
-
-  <nav class="nav navbar-default bg-danger text-white">
+<nav class="nav navbar-default bg-primary text-black">
     <ul class="nav navbar-nav mx-auto py-3">
-        <p class="text-center">Which brand are you looking for? <span class="text-light">Carzo is where you buy your dream cars</span></p>
+        <p class="text-center">What are you working on? <span class="text-light">Carzo is  where you by your dream cars</span></p>
        <li> <button type="button" class="btn btn-primary text-white">Learn More</button>
         <button type="button" class="btn btn-danger">Sign up</button></li>
         
     </ul>
 </nav>
-
-
-  
-  <div class="controls">
-    <a href="#">latest models</a>
-    <a href="#">luxurious cars</a>
-    <a href="#">Filters</a>
-  </div>
-
-  
-  <div class="container mt-4">
-    <div class="row g-4">
-      <!-- Repeat your image cards -->
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="roll.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Rolls Royce</h6>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="be.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Benz</h6>
-            
-          </div>
-        </div> 
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="lambo.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Lamborghini</h6>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="fer.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Ferrari</h6>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="bm.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">BMW</h6>
-           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="aud.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Audi</h6>
-            
-          </div>
-        </div>
-      </div>
+<nav class="navbar navbar-default bg-dark text-white">
+     <ul class="nav navbar-nav mx-auto">
+        <li class="dropdown"> Price Detais &#9662; &nbsp; Filter  &#9662; &nbsp; Customer Support  &#9662;</li>
+        
+     </ul>
+</nav>
+<br>
+<div class="row">
+    <div class="col-md-2">
+        <img src="roll.jpeg" height="200" width="200"><br>
+        <p text align="center">Rolls Royce</p>
     </div>
-  </div>
+    <div class="col-md-2">
+        <img src="bm.jpeg" height="200" width="200"><br>
+        <p text align="center">BMW</p>
+    </div>
+    <div class="col-md-2">
+        <img src="aud.jpeg" height="200" width="200"><br>
+        <p text align="center">Audi</p>
+    </div>
+    <div class="col-md-2">
+        <img src="lambo.jpeg" height="200" width="200"><br>
+        <p text align="center">Lambogrini</p>
+    </div>
+    <div class="col-md-2">
+        <img src="fer.jpeg" height="200" width="200"><br>
+        <p text align="center">Ferrari</p>
+    </div>
+    <div class="col-md-2">
+        <img src="be.jpeg" height="200" width="200"><br>
+        <p text align="center">Benz</p>
+    </div>
+        <h3 align="center">Ajay Karthick M(25010418)</h3>
+    </div>
+</div>
 
-  <footer>
-    <p>© Designed by Ajay karthick M (25010418)</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 ```
 ## OUTPUT:
-
-![alt text](<Screenshot 2025-10-16 174146.png>)
-
+![alt text](<Screenshot 2025-10-21 123200.png>)
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
 
